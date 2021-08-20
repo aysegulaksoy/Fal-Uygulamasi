@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fallar_hakkinda">
+
+    <ViewFlipper
+        android:id="@+id/view_fipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <!--ViewFlipper iki layout arası geçiş yapmak için kullanılır.iki layoutlar ekranda sayfa şeklinde görünür -->
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/zar_arka_plan"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/zar_hakkinda" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:background="#77000000"
+                android:fontFamily="casual"
+                android:lineSpacingExtra="10sp"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:text=" Zar falı adından da anlaşılacağı gibi zarla bakılan bir faldır. Zar atarak fala bakılır ve karşı tarafa ifade edilir.Bu fal türünde öncelikli olarak niyetin tutulması gerekmektedir. Niyet tutulduktan sonra zar atılmakta ve çıkan sonuca göre değerlendirme yapılmaktadır. Bu anlamda birden altıya kadar çıkan her zarın bir anlamı olmaktadır. Köken olarak tarih öncesine dayanan Zar falı için, günümüzde de ilgi eksilmemiştir. Zar falının günümüzde de halen devam ettiğini söyleyebiliriz. "
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yildznm"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/yildizname_hakkinda" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:background="#77000000"
+                android:fontFamily="casual"
+                android:lineSpacingExtra="10sp"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:text="Yıldızname Osmanlı döneminde odlukça yaygın olan bir uygulamaydı. Kökeni çok daha eskilere dayanan yıldızname, İslam felsefesinde kendisine yer bulmuştur. Günümüzde de oldukça ilgi duyulan bir konu olan yıldızname, bu konuda uzman kişilerin yapabildiği bir yöntemdir. Yıldızname bir tedavi yöntemi değildir ancak yıldızname ile hastalıkların çözüm yöntemi bulunabilir. Büyüye uğrama, cin çarpması ve nazar gibi ruhsal sorunlarda yıldızname çözüm yolları sunabilir."
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tarot_arkaplan"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/tarot_hakkinda" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:fontFamily="casual"
+                android:padding="10dp"
+                android:lineSpacingExtra="10sp"
+                android:text="Tarot falı, bilindiği kadarıyla insanlık tarihinin en eski kehanet yöntemlerinden biridir. Orta Çağ’ın sonlarına doğru çıktığı tahmin edilmektedir.Tarot falı, kartların gizemli ve mitolojik havası, dizilişi, resimleri ve rakamlarıyla eski inançlara ve sembollere atıfta bulunur. Açılan kartlarla, geçmiş ve şu an için yorumlar yapılırken; geleceğe dair de birtakım ipuçları vermek amaç edinilir. Fal sırasında yorumcu ile fala baktıran kişi arasında bir enerji akışı sağlanır. Bu enerji transferi de kartlara yansır, kartları onları hissetmek önemlidir."
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/previous"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="önceki"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8A000000" />
+
+
+    <Button
+        android:id="@+id/next"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="sonraki"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8A000000" />
+
+
+
+</RelativeLayout>

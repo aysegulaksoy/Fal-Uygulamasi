@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tarot_fali">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tarot_fali">
+        <activity android:name=".guncelle"></activity>
+        <activity android:name=".Listele" />
+        <activity android:name=".kullanici_girsi" />
+        <activity android:name=".zar_fali" />
+        <activity android:name=".yildizname" />
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tarot_desteler" />
+        <activity android:name=".fallar_hakkinda" />
+        <activity android:name=".tarot_kartlar" />
+        <activity android:name=".tarot_sonuc" />
+        <activity android:name=".ters_duz" />
+        <activity android:name=".ana_sayfa" />
+    </application>
+
+</manifest>

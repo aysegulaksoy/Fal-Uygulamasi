@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guncelle"
+    android:orientation="vertical"
+    android:background="@drawable/guncelleme_arkapln">
+
+    <LinearLayout
+        android:id="@+id/ly0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id:"
+            android:textStyle="bold"
+            android:textColor="#9F0D43"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/yenid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:ems="5"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/bul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID'yi bul"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ly1"
+        android:layout_below="@+id/ly0"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ad:"
+            android:textStyle="bold"
+            android:textColor="#9F0D43"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/yeniad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly1"
+        android:layout_centerHorizontal="true"
+
+        >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOYADIN:"
+            android:textStyle="bold"
+            android:textColor="#9F0D43"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/yenisoyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kaydet"
+        android:layout_below="@+id/ly2"/>
+
+    <Button
+        android:id="@+id/sil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="sil" />
+
+
+</RelativeLayout>

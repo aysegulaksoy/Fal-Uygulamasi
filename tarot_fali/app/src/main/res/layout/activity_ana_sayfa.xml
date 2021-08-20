@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anasayfa_arka_plann"
+    tools:context=".ana_sayfa">
+
+
+    <TextView
+        android:id="@+id/fal_turu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="İstediğiniz herhangi bir fal türünü seçin"
+        android:textColor="#3E2E35"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/zar_fali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fal_turu"
+        android:layout_marginTop="59dp"
+        android:drawableLeft="@drawable/dicee"
+        android:text="Zar Falı"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8A000000" />
+
+    <Button
+        android:id="@+id/yildizname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zar_fali"
+        android:drawableLeft="@drawable/yildiznameicon"
+        android:text="Yıldızname"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8A000000" />
+
+
+    <Button
+        android:id="@+id/tarot_fali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yildizname"
+        android:drawableLeft="@drawable/taroticon"
+        android:text="Tarot Falı"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8A000000" />
+
+
+    <Button
+        android:id="@+id/hakkinda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tarot_fali"
+        android:drawableLeft="@drawable/quastion"
+        android:text="Fallar Hakkında"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8A000000" />
+
+    <Button
+        android:id="@+id/fallarim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hakkinda"
+        android:drawableLeft="@drawable/fallarim"
+        android:text="Kaydedilen fallar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8A000000" />
+
+</RelativeLayout>

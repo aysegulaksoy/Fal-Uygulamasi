@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kullanici_girsi"
+    android:orientation="vertical"
+    android:background="@drawable/kullanici_girisi">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ly1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADIN:"
+            android:textStyle="bold"
+            android:textColor="#9F0D43"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly1"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOYADIN:"
+            android:textStyle="bold"
+            android:textColor="#9F0D43"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/soyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#77000000"
+        android:fontFamily="casual"
+        android:layout_below="@+id/ly2"
+        android:padding="10dp"
+        android:lineSpacingExtra="5sp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kaydet"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+</RelativeLayout>

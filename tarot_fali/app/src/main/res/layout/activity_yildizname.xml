@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yildizname"
+    android:background="@drawable/yildznm">
+
+    <!-- SCROLLVIEW'İ SAYFAYI AŞAĞI KAYDIRMAK İÇİN KULLANDIK VE SADECE LINEARLAYOUT DESTEKLENİYOR. -->
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ARKAPLANA DRAWABLE DOSYASI YOLUYLA RESİM EKLEDİK VE LAYOUT'U DİKEY OLARAK KULLANDIK -->
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Bize doğum tarihini söyle, Yıldıznameyle kaderini söyleyelim!"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- ÜSTTEN BOŞLUK BIRAKIP ORTAYA HİZALADIK VE YAZI ŞEKLİ BELİRLEDİK -->
+            <ImageView
+                android:id="@+id/yildizname"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/yyildizname"
+                />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Yıldızname; İslami kökenli, doğum tarihi ve aileyle alakalı bilgiler ile Arap astrolojisine göre yıldızlardan alınan etkileri de katarak, kaderimiz hakkında küçük ipuçları veren bir gelenek."
+                android:textColor="@color/black" />
+
+            <!-- WRAP_CONTENT İLE KAPLADIĞI KADAR YÜKSEKLİĞİ OLMASINI SAĞLADIK. KENAR BOŞLUKLARIYLA ŞEKİLLENDİRDİK. -->
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="1. Önce cinsiyetini seç :)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- RESİMLERİ YAN YANA SIRALAYABİLMEK İÇİN HORIZONTAL OLAN BİR LINEARLAYOUT KULLANDIK. -->
+
+                <ImageView
+                    android:id="@+id/erkek"
+                    android:layout_width="196dp"
+                    android:layout_height="81dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/erkekk" />
+
+                <ImageView
+                    android:id="@+id/kadin"
+                    android:layout_width="196dp"
+                    android:layout_height="81dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/kadinn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- TEKRAR DİKEY KULLANMAYA DEVAM ETMEK İÇİN YENİ LINEARLAYOUT -->
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rb"
+                    android:orientation="horizontal">
+
+                    <!-- RADIOBUTTONLARI YATAY HİZALAMAK İÇİN HORIZONTAL DEFAULT OLARAK VERTICAL GELİR -->
+                    <!-- HANGİSİNİN DEFAULT OLARAK SEÇİLİ GELDİĞİNİ BELİRTMEK İÇİN CHECKEDBUTTON -->
+
+                    <RadioButton
+                        android:id="@+id/rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginLeft="55dp"
+                        android:layout_weight="2"
+                        android:minWidth="10dp"
+                        android:minHeight="10dp"
+                        android:text="Erkek"
+                        android:textColor="@color/black" />
+
+                    <!-- RADIOBUTTON YÜKSEKLİĞİ İÇİN MİNWİDTH, MARGIN KENAR BOŞLUKLARI -->
+
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minWidth="10dp"
+                        android:minHeight="10dp"
+                        android:text="Kadın"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- RADIOBUTTONLARLA RESİMLER AYNI HİZADA OLSUN DİYE GEREKLİ AYARLARI YAPTIK VE KENDİ GENİŞLİĞİNDE OLSUN DİYE WRAP_CONTENT -->
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="2. Doğum tarihinin tüm rakamlarını tek bir rakam elde edene kadar topla bakalım. Kaç çıkıyor? (Örneğin 06.09.2000 tarihinde doğduysan, 0+6+0+9+2+0+0+0=17. çıkan 17yi de, 1+7=8 şeklinde bir toplama işlemi ile tek rakama indirmelisin.)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb3"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="1,2,3"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="4,5,6"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="7,8,9"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="3. Hangi ayda doğdun?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb6"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.70"
+                    android:text="Ocak, Şubat, Mart, Nisan"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.25"
+                    android:text="Mayıs, Haziran, Temmuz, Ağustos"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.70"
+                    android:text="Eylül, Ekim, Kasım, Aralık"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="4. Söyle bakalım, en korkunç kabuslarının teması ne olur?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/kabus"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/kabus" />
+
+            <RadioGroup
+                android:id="@+id/rg4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb9">
+
+
+                <RadioButton
+                    android:id="@+id/rb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Sevdiklerimin başına kötü bir şey geldiğini görürüm."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Yalnız kaldığımı görürüm."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Boğulduğumu görürüm."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Kaçtığımı ve aniden düştüğümü görürüm."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Kapana kısıldığımı, hareket edemediğimi hissederim."
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="5. Annenin ismi ve evlenmeden önceki soyadı kaç harfli? Tek bir rakam çıkana kadar topla! (Örneğin; Ayşe Türkoğlu isminde 12 harf var. 1+2=3 sonucu ile seçimini yapmalısın.)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb14"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="1,2,3"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="4,5,6"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="7,8,9"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="6. Kalıtsal bir hastalığın oldu mu?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb17">
+
+                <RadioButton
+                    android:id="@+id/rb17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Evet"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Hayır"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Ailemde kimse hastalanmamasına rağmen benim bir hastalığım var."
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="7. Babanla aran nasıl?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/baba"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                app:srcCompat="@drawable/baba" />
+
+            <RadioGroup
+                android:id="@+id/rg7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb20">
+
+                <RadioButton
+                    android:id="@+id/rb20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Harika!"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Anlaşamasak da severiz birbirimizi."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Aram iyi değil."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Onu pek tanıma şansım olmadı."
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="8. Son olarak ise; bu testi ne için çözüyorsun? Yıldızname'ne baktırmanın amacı nedir?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/yildizname2"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                app:srcCompat="@drawable/yildiznamee" />
+
+            <RadioGroup
+                android:id="@+id/rg8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb24">
+
+                <RadioButton
+                    android:id="@+id/rb24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Öylesine çözüyorum, bir amacı yok."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Bu tarz konular ilgimi çekmiştir, meraktan çözüyorum."
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp"
+                    android:minHeight="10dp"
+                    android:text="Kendimle ilgili bir şeyler öğrenebilirim belki diye çözüyorum."
+                    android:textColor="@color/black" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yıldızname falıma bak"
+                android:textColor="#FFFFFF"
+                android:textColorHint="@color/black"
+                app:backgroundTint="#8A000000"
+                />
+            <!-- BUTTONUN ARKAPLAN RENGİNİ SİYAH YAPTIK VE BASINCA FAL MESAJI VERMEK İÇİN KULLANDIK -->
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:padding="10dp"
+                android:fontFamily="casual"
+                android:text="Bakalım yıldızname falında ne çıkacak :)"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                />
+
+            <!-- MESAJI ORTAYA HİZALI VE KALIN YAZI ŞEKLİNDE BU TEXTVIEW'DEKİ YAZIYI DEĞİŞTİREREK VERDİK -->
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/paylas_icon"
+                android:text="Fal sonucunu paylaş"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:backgroundTint="#8A000000"/>
+
+            <!-- FAL SONUCU ÇIKINCA ORTAYA ÇIKAN DEFAULT OLARAK GİZLİ GELEN PAYLAŞMA BUTONU -->
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anasayfa"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:backgroundTint="#8A000000" />
+            <!-- BİR ÖNCEKİ AKTİVİTEYE GEÇİŞ -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
